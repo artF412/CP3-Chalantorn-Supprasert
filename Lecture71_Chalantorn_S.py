@@ -7,6 +7,7 @@ def showBill():
     print(cen)
     for num in range(len(menuList)):
         print(menuList[num],priceList[num])
+    print("ราคาอาหารทั้งหมด",sum(priceList),"บาท")    
 
 while True:
     menuName = input("Please Enter Menu : ")
@@ -17,4 +18,3 @@ while True:
         menuList.append(menuName)
         priceList.append(menuPrice)
 showBill()
-print("ราคาอาหารทั้งหมด",sum(priceList),"บาท")
